@@ -1,0 +1,127 @@
+    1  cd ~/Desktop
+    2  mkdir HW_10
+    3  cd HW_10
+    4  history -с && rm ~/.bash_history
+    5  git config --global user.name "Bogdana"
+    6  git config --global user.email "bkalush7@ukr.net"
+    7  git config --global --list
+    8  cd ~/Desktop/HW_10
+    9  git clone[200~https://github.com/BogdanaKalush/HW_10.git~
+   10  cd HW_10
+   11  ls
+   12  cd ~
+   13  git clone https:https://github.com/BogdanaKalush/HW_10.git
+   14  cd ~
+   15  git clone https://github.com/BogdanaKalush/HW_10.git
+   16  cd HW_10
+   17  ls
+   18  ls
+   19  ls -a
+   20  pwd
+   21  touch text_ignore.txt
+   22  ls
+   23  nano .gitignore
+   24  cat .gitignore
+   25  cd ~/HW_10
+   26  git status
+   27  cd ~/HW_10
+   28  git add
+   29  git status
+   30  pwd
+   31  git add .gitignore
+   32  [200~git status~
+   33  git status
+   34  git add .gitignore
+   35  git status
+   36  cd ~/HW_10
+   37  git commit -m "Update .gitignore to ignore text_ignore.txt"
+   38  git status
+   39  cd ~/HW_10
+   40  touch main_test.txt
+   41  ls -l
+   42  cd ~/HW_10
+   43  git add
+   44  git status
+   45  git add main_test.txt
+   46  git status
+   47  git add 
+   48  git status
+   49  git commit -m "Add main_test.txt and any other changes"
+   50  git add
+   51  git status
+   52  git status
+   53  ls -1
+   54  git add main_test.txt
+   55  git commit -m "Add empty file main_test.txt"
+   56  git status
+   57  git branch develop
+   58  git checkout develop
+   59  git branch
+   60  git branch
+   61  touch develop_test.txt
+   62  ls -l
+   63  git add
+   64  git status
+   65  git commit -m "Add empty file develop_test.txt"
+   66  git add develop_test.txt
+   67  git commit -m "Add empty file develop_test.txt"
+   68  [200~git status~
+   69  git status
+   70  git status
+   71  git commit -m "Add empty file develop_test.txt"
+   72  git status
+   73  ls -l
+   74  nano develop_test.txt
+   75  git add develop_test.txt
+   76  git commit -m "Add a small change to develop_test.txt"
+   77  git status
+   78  vim develop_test.txt
+   79  git add develop_test.txt
+   80  git commit -m "Add a small change to develop_test.txt"
+   81  git status
+   82  vim develop_test.txt
+   83  git status
+   84  vim develop_test.txt
+   85  git status
+   86  touch new_file.txt
+   87  echo "This is a new file" > new_file.txt
+   88  git add new_file.txt
+   89  git commit -m "Add new_file.txt"
+   90  git status
+   91  ls -l
+   92  vim develop_test.txt
+   93  git status
+   94  touch new_file.txt
+   95  echo "This is a new file" > new_file.txt
+   96  git add new_file.txt
+   97  git commit -m "Add new_file.txt"
+   98  git status
+   99  ls -l
+  100  cat new_file.txt
+  101  git add new_file.txt
+  102  git commit -m "Add new_file.txt"
+  103  git ls-files
+  104  git checkout develop
+  105  git add new_file.txt
+  106  git status
+  107  cat new_file.txt
+  108  echo "Adding another line." >> new_file.txt
+  109  git add new_file.txt
+  110  cat new_file.txt
+  111  echo "Adding a new line." >> new_file.txt
+  112  git add new_file.txt
+  113  git status
+  114  git commit -m "Update new_file.txt with an additional line"
+  115  git checkout main
+  116  git status
+  117  git checkout main
+  118  git merge develop
+  119* 
+  120  git log
+  121  history > command_list.csv
+  122  git add
+  123  git commit -m "Add command_list.csv with command history"
+  124  git push origin main
+  125  git status
+  126  pwd
+  127  history > command_list.csv
