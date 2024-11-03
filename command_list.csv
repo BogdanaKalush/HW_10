@@ -125,3 +125,287 @@
   125  git status
   126  pwd
   127  history > command_list.csv
+  128  ls
+  129  git add command_list.csv
+  130  git commit -m "Add command_list.csv"
+  131  git push
+  132  git push
+  133  git push
+  134   ^C
+  135  User@DESKTOP-KN5UTFA MINGW64 ~/HW_10 (main)
+  136  $ 
+  137  git push
+  138  User@DESKTOP-KN5UTFA MINGW64 ~
+  139  $ cd ~/Desktop
+  140  User@DESKTOP-KN5UTFA MINGW64 ~/Desktop
+  141  $ mkdir HW_10
+  142  User@DESKTOP-KN5UTFA MINGW64 ~/Desktop
+  143  $ cd HW_10
+  144  User@DESKTOP-KN5UTFA MINGW64 ~/Desktop/HW_10
+  145  $ history -с && rm ~/.bash_history
+  146  bash: history: -▒: invalid option
+  147  history: usage: history [-c] [-d offset] [n] or history -anrw [filename] or history -ps arg [arg...]
+  148  User@DESKTOP-KN5UTFA MINGW64 ~/Desktop/HW_10
+  149  $ git config --global user.name "Bogdana"
+  150  User@DESKTOP-KN5UTFA MINGW64 ~/Desktop/HW_10
+  151  $ git config --global user.email "bkalush7@ukr.net"
+  152  User@DESKTOP-KN5UTFA MINGW64 ~/Desktop/HW_10
+  153  $ git config --global --list
+  154  user.name=Bogdana
+  155  user.email=bkalush7@ukr.net
+  156  User@DESKTOP-KN5UTFA MINGW64 ~/Desktop/HW_10
+  157  $ cd ~/Desktop/HW_10
+  158  User@DESKTOP-KN5UTFA MINGW64 ~/Desktop/HW_10
+  159  $ git clone^[[200~https://github.com/BogdanaKalush/HW_10.git~
+  160  git: 'clonehttps://github.com/BogdanaKalush/HW_10.git~' is not a git command. Se
+  161  e 'git --help'.
+  162  User@DESKTOP-KN5UTFA MINGW64 ~/Desktop/HW_10
+  163  $ cd HW_10
+  164  bash: cd: HW_10: No such file or directory
+  165  User@DESKTOP-KN5UTFA MINGW64 ~/Desktop/HW_10
+  166  $ ls
+  167  User@DESKTOP-KN5UTFA MINGW64 ~/Desktop/HW_10
+  168  $ cd ~
+  169  git clone https:https://github.com/BogdanaKalush/HW_10.git
+  170  Cloning into 'HW_10'...
+  171  fatal: protocol 'https:https' is not supported
+  172  User@DESKTOP-KN5UTFA MINGW64 ~
+  173  $ cd ~
+  174  git clone https://github.com/BogdanaKalush/HW_10.git
+  175  Cloning into 'HW_10'...
+  176  remote: Enumerating objects: 4, done.
+  177  remote: Counting objects: 100% (4/4), done.
+  178  remote: Compressing objects: 100% (3/3), done.
+  179  remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+  180  Receiving objects: 100% (4/4), done.
+  181  User@DESKTOP-KN5UTFA MINGW64 ~
+  182  $ cd HW_10
+  183  User@DESKTOP-KN5UTFA MINGW64 ~/HW_10 (main)
+  184  $ ls
+  185  README.md
+  186  User@DESKTOP-KN5UTFA MINGW64 ~/HW_10 (main)
+  187  $ ls
+  188  README.md
+  189  User@DESKTOP-KN5UTFA MINGW64 ~/HW_10 (main)
+  190  $ ls -a
+  191  ./  ../  .git/  .gitignore  README.md
+  192  User@DESKTOP-KN5UTFA MINGW64 ~/HW_10 (main)
+  193  $ pwd
+  194  /c/Users/User/HW_10
+  195  User@DESKTOP-KN5UTFA MINGW64 ~/HW_10 (main)
+  196  $ touch text_ignore.txt
+  197  User@DESKTOP-KN5UTFA MINGW64 ~/HW_10 (main)
+  198  $ ls
+  199  README.md  text_ignore.txt
+  200  User@DESKTOP-KN5UTFA MINGW64 ~/HW_10 (main)
+  201  $ nano .gitignore
+  202  User@DESKTOP-KN5UTFA MINGW64 ~/HW_10 (main)
+  203  $ cat .gitignore
+  204  ### AL ###
+  205  #Template for AL projects for Dynamics 365 Business Central
+  206  #launch.json folder
+  207  .vscode/
+  208  #Cache folder
+  209  .alcache/
+  210  #Symbols folder
+  211  .alpackages/
+  212  #Snapshots folder
+  213  .snapshots/
+  214  #Testing Output folder
+  215  .output/
+  216  #Extension App-file
+  217  *.app
+  218  #Rapid Application Development File
+  219  rad.json
+  220  #Translation Base-file
+  221  *.g.xlf
+  222  #License-file
+  223  *.flf
+  224  #Test results file
+  225  TestResults.xml
+  226  text_ignore.txt
+  227  User@DESKTOP-KN5UTFA MINGW64 ~/HW_10 (main)
+  228  $ cd ~/HW_10
+  229  User@DESKTOP-KN5UTFA MINGW64 ~/HW_10 (main)
+  230  $ git status
+  231  On branch main
+  232  Your branch is up to date with 'origin/main'.
+  233  Changes not staged for commit:
+  234    (use "git add <file>..." to update what will be committed)
+  235    (use "git restore <file>..." to discard changes in working directory)
+  236          modified:   .gitignore
+  237  no changes added to commit (use "git add" and/or "git commit -a")
+  238  User@DESKTOP-KN5UTFA MINGW64 ~/HW_10 (main)
+  239  $ cd ~/HW_10
+  240  User@DESKTOP-KN5UTFA MINGW64 ~/HW_10 (main)
+  241  $ git add
+  242  Nothing specified, nothing added.
+  243  hint: Maybe you wanted to say 'git add .'?
+  244  hint: Disable this message with "git config advice.addEmptyPathspec false"
+  245  User@DESKTOP-KN5UTFA MINGW64 ~/HW_10 (main)
+  246  $ git status
+  247  On branch main
+  248  Your branch is up to date with 'origin/main'.
+  249  Changes not staged for commit:
+  250    (use "git add <file>..." to update what will be committed)
+  251    (use "git restore <file>..." to discard changes in working directory)
+  252          modified:   .gitignore
+  253  no changes added to commit (use "git add" and/or "git commit -a")
+  254  User@DESKTOP-KN5UTFA MINGW64 ~/HW_10 (main)
+  255  $ pwd
+  256  /c/Users/User/HW_10
+  257  User@DESKTOP-KN5UTFA MINGW64 ~/HW_10 (main)
+  258  $ git add .gitignore
+  259  User@DESKTOP-KN5UTFA MINGW64 ~/HW_10 (main)
+  260  $ ^[[200~git status~
+  261  bash: $'\E[200~git': command not found
+  262  User@DESKTOP-KN5UTFA MINGW64 ~/HW_10 (main)
+  263  $ git status
+  264  On branch main
+  265  Your branch is up to date with 'origin/main'.
+  266  Changes to be committed:
+  267    (use "git restore --staged <file>..." to unstage)
+  268          modified:   .gitignore
+  269  User@DESKTOP-KN5UTFA MINGW64 ~/HW_10 (main)
+  270  $ git add .gitignore
+  271  User@DESKTOP-KN5UTFA MINGW64 ~/HW_10 (main)
+  272  $ git status
+  273  On branch main
+  274  Your branch is up to date with 'origin/main'.
+  275  Changes to be committed:
+  276    (use "git restore --staged <file>..." to unstage)
+  277          modified:   .gitignore
+  278  User@DESKTOP-KN5UTFA MINGW64 ~/HW_10 (main)
+  279  $ cd ~/HW_10
+  280  User@DESKTOP-KN5UTFA MINGW64 ~/HW_10 (main)
+  281  $ git commit -m "Update .gitignore to ignore text_ignore.txt"
+  282  [main e18cffa] Update .gitignore to ignore text_ignore.txt
+  283   1 file changed, 4 insertions(+), 1 deletion(-)
+  284  User@DESKTOP-KN5UTFA MINGW64 ~/HW_10 (main)
+  285  $ git status
+  286  On branch main
+  287  Your branch is ahead of 'origin/main' by 1 commit.
+  288    (use "git push" to publish your local commits)
+  289  nothing to commit, working tree clean
+  290  User@DESKTOP-KN5UTFA MINGW64 ~/HW_10 (main)
+  291  $ cd ~/HW_10
+  292  User@DESKTOP-KN5UTFA MINGW64 ~/HW_10 (main)
+  293  $ touch main_test.txt
+  294  User@DESKTOP-KN5UTFA MINGW64 ~/HW_10 (main)
+  295  $ ls -l
+  296  total 1
+  297  -rw-r--r-- 1 User 197121 7 Nov  3 17:36 README.md
+  298  -rw-r--r-- 1 User 197121 0 Nov  3 18:04 main_test.txt
+  299  -rw-r--r-- 1 User 197121 0 Nov  3 17:42 text_ignore.txt
+  300  User@DESKTOP-KN5UTFA MINGW64 ~/HW_10 (main)
+  301  $ cd ~/HW_10
+  302  User@DESKTOP-KN5UTFA MINGW64 ~/HW_10 (main)
+  303  $ git add
+  304  Nothing specified, nothing added.
+  305  hint: Maybe you wanted to say 'git add .'?
+  306  hint: Disable this message with "git config advice.addEmptyPathspec false"
+  307  User@DESKTOP-KN5UTFA MINGW64 ~/HW_10 (main)
+  308  $ git status
+  309  On branch main
+  310  Your branch is ahead of 'origin/main' by 1 commit.
+  311    (use "git push" to publish your local commits)
+  312  Untracked files:
+  313    (use "git add <file>..." to include in what will be committed)
+  314          main_test.txt
+  315  nothing added to commit but untracked files present (use "git add" to track)
+  316  User@DESKTOP-KN5UTFA MINGW64 ~/HW_10 (main)
+  317  $ git add main_test.txt
+  318  User@DESKTOP-KN5UTFA MINGW64 ~/HW_10 (main)
+  319  $ git status
+  320  On branch main
+  321  Your branch is ahead of 'origin/main' by 1 commit.
+  322    (use "git push" to publish your local commits)
+  323  Changes to be committed:
+  324    (use "git restore --staged <file>..." to unstage)
+  325          new file:   main_test.txt
+  326  User@DESKTOP-KN5UTFA MINGW64 ~/HW_10 (main)
+  327  $ git add
+  328  Nothing specified, nothing added.
+  329  hint: Maybe you wanted to say 'git add .'?
+  330  hint: Disable this message with "git config advice.addEmptyPathspec false"
+  331  User@DESKTOP-KN5UTFA MINGW64 ~/HW_10 (main)
+  332  $ git status
+  333  On branch main
+  334  Your branch is ahead of 'origin/main' by 1 commit.
+  335    (use "git push" to publish your local commits)
+  336  Changes to be committed:
+  337    (use "git restore --staged <file>..." to unstage)
+  338          new file:   main_test.txt
+  339  User@DESKTOP-KN5UTFA MINGW64 ~/HW_10 (main)
+  340  $ git commit -m "Add main_test.txt and any other changes"
+  341  [main 5b658e8] Add main_test.txt and any other changes
+  342   1 file changed, 0 insertions(+), 0 deletions(-)
+  343   create mode 100644 main_test.txt
+  344  User@DESKTOP-KN5UTFA MINGW64 ~/HW_10 (main)
+  345  $ git add
+  346  Nothing specified, nothing added.
+  347  hint: Maybe you wanted to say 'git add .'?
+  348  hint: Disable this message with "git config advice.addEmptyPathspec false"
+  349  User@DESKTOP-KN5UTFA MINGW64 ~/HW_10 (main)
+  350  $ git status
+  351  On branch main
+  352  Your branch is ahead of 'origin/main' by 2 commits.
+  353    (use "git push" to publish your local commits)
+  354  nothing to commit, working tree clean
+  355  User@DESKTOP-KN5UTFA MINGW64 ~/HW_10 (main)
+  356  $ git status
+  357  On branch main
+  358  Your branch is ahead of 'origin/main' by 2 commits.
+  359    (use "git push" to publish your local commits)
+  360  nothing to commit, working tree clean
+  361  User@DESKTOP-KN5UTFA MINGW64 ~/HW_10 (main)
+  362  $ ls -1
+  363  README.md
+  364  main_test.txt
+  365  text_ignore.txt
+  366  User@DESKTOP-KN5UTFA MINGW64 ~/HW_10 (main)
+  367  $ git add main_test.txt
+  368  User@DESKTOP-KN5UTFA MINGW64 ~/HW_10 (main)
+  369  $ git commit -m "Add empty file main_test.txt"
+  370  On branch main
+  371  Your branch is ahead of 'origin/main' by 2 commits.
+  372    (use "git push" to publish your local commits)
+  373  nothing to commit, working tree clean
+  374  User@DESKTOP-KN5UTFA MINGW64 ~/HW_10 (main)
+  375  $ git status
+  376  On branch main
+  377  Your branch is ahead of 'origin/main' by 2 commits.
+  378    (use "git push" to publish your local commits)
+  379  nothing to commit, working tree clean
+  380  User@DESKTOP-KN5UTFA MINGW64 ~/HW_10 (main)
+  381  $ git branch develop
+  382  User@DESKTOP-KN5UTFA MINGW64 ~/HW_10 (main)
+  383  $ git checkout develop
+  384  Switched to branch 'develop'
+  385  User@DESKTOP-KN5UTFA MINGW64 ~/HW_10 (develop)
+  386  $ git branch
+  387  * develop
+  388    main
+  389  User@DESKTOP-KN5UTFA MINGW64 ~/HW_10 (develop)
+  390  $ git branch
+  391  * develop
+  392    main
+  393  User@DESKTOP-KN5UTFA MINGW64 ~/HW_10 (develop)
+  394  $ touch develop_test.txt
+  395  User@DESKTOP-KN5UTFA MINGW64 ~/HW_10 (develop)
+  396  $ ls -l
+  397  total 1
+  398  -rw-r--r-- 1 User 197121 7 Nov  3 17:36 README.md
+  399  -rw-r--r-- 1 User 197121 0 Nov  3 18:15 develop_test.txt
+  400  -rw-r--r-- 1 User 197121 0 Nov  3 18:04 main_test.txt
+  401  -rw-r--r-- 1 User 197121 0 Nov  3 17:42 text_ignore.txt
+  402  User@DESKTOP-KN5UTFA MINGW64 ~/HW_10 (develop)
+  403  $ git add
+  404  Nothing specified, nothing added.
+  405  hint: Maybe you wanted to say 'git add .'?
+  406  hint: Disable this message with "git config advice.addEmptyPathspec false"
+  407  User@DESKTOP-KN5UTFA MINGW64 ~/HW_10 (develop)
+  408  $ git status
+  409  On branch develop
+  410  Untracked files
+  411  history > command_list.csv
